@@ -13,12 +13,17 @@
                 <include name="smoke"/>
                 <include name="regression"/>
             </define>
+            <define name="Group Homework">
+                <include name="smokeHomework"/>
+                <include name="regressionHomework"/>
+            </define>
             <run>
-                <include name="Group 1"></include>
+                <include name="Group Homework"></include>
             </run>
         </groups>
         <classes>
             <class name="tests.GroupsTest"></class>
+            <class name="tests.HomeworkTest"></class>
         </classes>
     </test>
 </suite>

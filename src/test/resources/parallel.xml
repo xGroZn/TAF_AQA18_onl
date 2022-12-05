@@ -12,4 +12,9 @@
             <class name="tests.DependencyTest"/>
         </classes>
     </test>
+    <test name = "Homework">
+        <classes>
+            <class name="tests.HomeworkTest"/>
+        </classes>
+    </test>
 </suite>

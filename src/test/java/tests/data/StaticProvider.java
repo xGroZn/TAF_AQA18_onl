@@ -12,4 +12,12 @@ public class StaticProvider {
                 {2, 3, 5},
         };
     }
+    @DataProvider (name = "dataForDiv")
+    public static Object[][] dataForDivTest() {
+        return new Object[][] {
+                {6, 3, 2},
+                {12, 4, 3},
+                {15, 5, 3},
+        };
+    }
 }
