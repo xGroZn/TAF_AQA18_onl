@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="86645caa-123d-47a3-a8b4-93ac586785ac" name="Changes" comment="initial">
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/SmokeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/SmokeTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/BasicLocatorsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/config.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,7 +24,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="testng_hw" />
+        <entry key="$PROJECT_DIR$" value="selenium_wd" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -66,18 +68,8 @@
       <recent name="tests" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.SmokeTest.validateSKFTest">
-    <configuration name="D:/Programms/TAF_AQA18_onl/TAF_AQA18_onl/src/test/resources/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="TAF_AQA18_onl" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/testng.xml" />
-      <option name="TEST_OBJECT" value="SUITE" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SimpleWDTest.simpleWDTest" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.BasicLocatorsTest.basicLocatorsTest">
+    <configuration name="BasicLocatorsTest.basicLocatorsTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="TAF_AQA18_onl" />
       <extension name="coverage">
         <pattern>
@@ -86,9 +78,19 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.SimpleWDTest" />
-      <option name="METHOD_NAME" value="simpleWDTest" />
+      <option name="MAIN_CLASS_NAME" value="tests.BasicLocatorsTest" />
+      <option name="METHOD_NAME" value="basicLocatorsTest" />
       <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="D:/Programms/TAF_AQA18_onl/TAF_AQA18_onl/src/test/resources/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="TAF_AQA18_onl" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/testng.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
       <properties />
       <listeners />
       <method v="2">
@@ -150,11 +152,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.BasicLocatorsTest.basicLocatorsTest" />
         <item itemvalue="TestNG.SmokeTest.validateSKFTest" />
         <item itemvalue="TestNG.D:/Programms/TAF_AQA18_onl/TAF_AQA18_onl/src/test/resources/testng.xml" />
         <item itemvalue="TestNG.SmokeTest.validateIKTCalculator" />
         <item itemvalue="TestNG.SmokeTest" />
-        <item itemvalue="TestNG.SimpleWDTest.simpleWDTest" />
       </list>
     </recent_temporary>
   </component>
@@ -181,7 +183,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670351554152</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="initial">
+      <created>1670352106207</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1670352106207</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
