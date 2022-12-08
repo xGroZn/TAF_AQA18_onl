@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="86645caa-123d-47a3-a8b4-93ac586785ac" name="Changes" comment="initial">
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/BasicLocatorsTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/CssSelectorsTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/XPathSelectorsTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/config.properties" afterDir="false" />
     </list>
@@ -68,7 +70,7 @@
       <recent name="tests" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.BasicLocatorsTest.basicLocatorsTest">
+  <component name="RunManager" selected="TestNG.CssSelectorsTest.cssLocatorsTest">
     <configuration name="BasicLocatorsTest.basicLocatorsTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="TAF_AQA18_onl" />
       <extension name="coverage">
@@ -87,17 +89,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="D:/Programms/TAF_AQA18_onl/TAF_AQA18_onl/src/test/resources/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="TAF_AQA18_onl" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/testng.xml" />
-      <option name="TEST_OBJECT" value="SUITE" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SmokeTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="CssSelectorsTest.cssLocatorsTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="TAF_AQA18_onl" />
       <extension name="coverage">
         <pattern>
@@ -106,8 +98,19 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.SmokeTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="MAIN_CLASS_NAME" value="tests.CssSelectorsTest" />
+      <option name="METHOD_NAME" value="cssLocatorsTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="D:/Programms/TAF_AQA18_onl/TAF_AQA18_onl/src/test/resources/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="TAF_AQA18_onl" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/testng.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
       <properties />
       <listeners />
       <method v="2">
@@ -152,11 +155,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.CssSelectorsTest.cssLocatorsTest" />
         <item itemvalue="TestNG.BasicLocatorsTest.basicLocatorsTest" />
         <item itemvalue="TestNG.SmokeTest.validateSKFTest" />
         <item itemvalue="TestNG.D:/Programms/TAF_AQA18_onl/TAF_AQA18_onl/src/test/resources/testng.xml" />
         <item itemvalue="TestNG.SmokeTest.validateIKTCalculator" />
-        <item itemvalue="TestNG.SmokeTest" />
       </list>
     </recent_temporary>
   </component>
@@ -190,7 +193,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670352106207</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="initial">
+      <created>1670353036421</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1670353036421</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
