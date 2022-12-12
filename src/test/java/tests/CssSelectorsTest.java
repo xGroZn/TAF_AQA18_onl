@@ -34,7 +34,7 @@ public class CssSelectorsTest {
         Assert.assertTrue(driver.findElement(By.className("newsletter")).isDisplayed());
 
         // Поиск по нескольким значениям в аттрибуте class
-        Assert.assertTrue(driver.findElement(By.cssSelector(".newsletter")).isDisplayed());
+        Assert.assertTrue(driver.findElement(By.cssSelector(".newsletter.noSel")).isDisplayed());
 
         // Поиск по tag name
         Assert.assertTrue(driver.findElement(By.cssSelector("h1")).isDisplayed());
@@ -43,7 +43,7 @@ public class CssSelectorsTest {
         // Поиск по tag name и значения class name
         Assert.assertTrue(driver.findElement(By.cssSelector("div.intro")).isDisplayed());
 
-        // Поиск по по classname с учетом иерархии
+        // Поиск элемента по classname с учетом иерархии
         Assert.assertEquals(driver.findElements(By.cssSelector("#Lastname .markup")).size(), 2);
 
         // Поиск всех элементов с tagname h1 или p
@@ -54,6 +54,9 @@ public class CssSelectorsTest {
 
         // Поиск всех элементов с тэгом p которые идут сразу за элементом с тэгом ul
         Assert.assertEquals(1, driver.findElements(By.cssSelector("ul + p")).size());
+
+        // Поиск всех элементов у которых присутствует аттрибут lang
+        Assert.assertEquals(1, driver.findElements(By.cssSelector("p[lang]")).size());
 
         // Поиск всех элементов у которых присутствует аттрибут style с конкретным значением
         Assert.assertEquals(1, driver.findElements(By.cssSelector("[style='overflow: auto;']")).size());

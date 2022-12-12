@@ -5,11 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="86645caa-123d-47a3-a8b4-93ac586785ac" name="Changes" comment="initial">
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/CssSelectorsTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/XPathSelectorsTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/config.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/CssSelectorsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/CssSelectorsTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,7 +23,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="selenium_wd" />
+        <entry key="$PROJECT_DIR$" value="selenium_wd_hw" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -155,11 +152,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.SmokeTest.validateSKFTest" />
+        <item itemvalue="TestNG.SmokeTest.validateIKTCalculator" />
+        <item itemvalue="TestNG.D:/Programms/TAF_AQA18_onl/TAF_AQA18_onl/src/test/resources/testng.xml" />
         <item itemvalue="TestNG.CssSelectorsTest.cssLocatorsTest" />
         <item itemvalue="TestNG.BasicLocatorsTest.basicLocatorsTest" />
-        <item itemvalue="TestNG.SmokeTest.validateSKFTest" />
-        <item itemvalue="TestNG.D:/Programms/TAF_AQA18_onl/TAF_AQA18_onl/src/test/resources/testng.xml" />
-        <item itemvalue="TestNG.SmokeTest.validateIKTCalculator" />
       </list>
     </recent_temporary>
   </component>
@@ -179,28 +176,7 @@
       <option name="project" value="LOCAL" />
       <updated>1669744677556</updated>
     </task>
-    <task id="LOCAL-00002" summary="initial">
-      <created>1670351554152</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1670351554152</updated>
-    </task>
-    <task id="LOCAL-00003" summary="initial">
-      <created>1670352106207</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1670352106207</updated>
-    </task>
-    <task id="LOCAL-00004" summary="initial">
-      <created>1670353036421</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1670353036421</updated>
-    </task>
-    <option name="localTasksCounter" value="5" />
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
