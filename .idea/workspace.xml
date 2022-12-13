@@ -5,8 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="86645caa-123d-47a3-a8b4-93ac586785ac" name="Changes" comment="initial">
+      <change afterPath="$PROJECT_DIR$/src/test/java/baseEntities/BasePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/baseEntities/BaseStep.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/baseEntities/BaseTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/pages/DashboardPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/pages/LoginPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/steps/UserStep.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/LoginTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/CssSelectorsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/CssSelectorsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/BasicLocatorsTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/CssSelectorsTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/XPathSelectorsTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/index.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,7 +33,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="selenium_wd_hw" />
+        <entry key="$PROJECT_DIR$" value="locators" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -44,18 +54,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Programms/TAF_AQA18_onl/TAF_AQA18_onl/src/test/resources&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "D:/Programms/TAF_AQA18_onl/TAF_AQA18_onl/src/test/java/pages",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Programms\TAF_AQA18_onl\TAF_AQA18_onl\src\test\java\pages" />
       <recent name="D:\Programms\TAF_AQA18_onl\TAF_AQA18_onl\src\test\resources" />
       <recent name="D:\Programms\TAF_AQA18_onl\TAF_AQA18_onl\src\test\java\tests" />
       <recent name="D:\Programms\TAF_AQA18_onl\TAF_AQA18_onl\src\main\java" />
@@ -67,25 +78,7 @@
       <recent name="tests" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.CssSelectorsTest.cssLocatorsTest">
-    <configuration name="BasicLocatorsTest.basicLocatorsTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="TAF_AQA18_onl" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.BasicLocatorsTest" />
-      <option name="METHOD_NAME" value="basicLocatorsTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="TestNG.LoginTest.loginTest">
     <configuration name="CssSelectorsTest.cssLocatorsTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="TAF_AQA18_onl" />
       <extension name="coverage">
@@ -108,6 +101,24 @@
       <module name="TAF_AQA18_onl" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/testng.xml" />
       <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginTest.loginTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="TAF_AQA18_onl" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.LoginTest" />
+      <option name="METHOD_NAME" value="loginTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -152,11 +163,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.LoginTest.loginTest" />
         <item itemvalue="TestNG.SmokeTest.validateSKFTest" />
         <item itemvalue="TestNG.SmokeTest.validateIKTCalculator" />
         <item itemvalue="TestNG.D:/Programms/TAF_AQA18_onl/TAF_AQA18_onl/src/test/resources/testng.xml" />
         <item itemvalue="TestNG.CssSelectorsTest.cssLocatorsTest" />
-        <item itemvalue="TestNG.BasicLocatorsTest.basicLocatorsTest" />
       </list>
     </recent_temporary>
   </component>
@@ -176,7 +187,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669744677556</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="initial">
+      <created>1670881655275</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1670881655275</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
