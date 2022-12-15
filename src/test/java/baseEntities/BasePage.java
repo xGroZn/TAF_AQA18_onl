@@ -6,9 +6,11 @@ import org.openqa.selenium.WebDriver;
 
 public abstract class BasePage {
     protected WebDriver driver;
+    protected WaitsService waitsService;
 
     public BasePage(WebDriver driver) {
         this.driver = driver;
+        waitsService = new WaitsService(driver);
     }
 
     protected abstract By getPageIdentifier();

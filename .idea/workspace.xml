@@ -4,19 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="86645caa-123d-47a3-a8b4-93ac586785ac" name="Changes" comment="initial">
-      <change afterPath="$PROJECT_DIR$/src/test/java/baseEntities/BasePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/baseEntities/BaseStep.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/baseEntities/BaseTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/DashboardPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/LoginPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/steps/UserStep.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/LoginTest.java" afterDir="false" />
+    <list default="true" id="86645caa-123d-47a3-a8b4-93ac586785ac" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/services/WaitsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/WaitsTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/BasicLocatorsTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/CssSelectorsTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/XPathSelectorsTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/configuration/ReadProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/configuration/ReadProperties.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/factory/BrowserFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/factory/BrowserFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/baseEntities/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/baseEntities/BasePage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,7 +27,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="locators" />
+        <entry key="$PROJECT_DIR$" value="pageObject" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -58,7 +52,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "D:/Programms/TAF_AQA18_onl/TAF_AQA18_onl/src/test/java/pages",
+    "last_opened_file_path": "D:/Programms/TAF_AQA18_onl/TAF_AQA18_onl/src/main/java/services",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2"
@@ -66,9 +60,10 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Programms\TAF_AQA18_onl\TAF_AQA18_onl\src\main\java\services" />
+      <recent name="D:\Programms\TAF_AQA18_onl\TAF_AQA18_onl\src\test\java\tests" />
       <recent name="D:\Programms\TAF_AQA18_onl\TAF_AQA18_onl\src\test\java\pages" />
       <recent name="D:\Programms\TAF_AQA18_onl\TAF_AQA18_onl\src\test\resources" />
-      <recent name="D:\Programms\TAF_AQA18_onl\TAF_AQA18_onl\src\test\java\tests" />
       <recent name="D:\Programms\TAF_AQA18_onl\TAF_AQA18_onl\src\main\java" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
