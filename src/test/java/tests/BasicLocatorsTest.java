@@ -34,7 +34,7 @@ public class BasicLocatorsTest {
         // Find webElement by TagName
         driver.findElement(By.tagName("button")).click();
     }
-
+    @Test
     public void basicLocatorsTest_2() throws InterruptedException {
         driver.get(ReadProperties.getUrl());
 
