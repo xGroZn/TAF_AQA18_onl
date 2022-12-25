@@ -15,8 +15,9 @@ public class DashboardPage extends BasePage {
 
     public DashboardPage(WebDriver driver, boolean openPageByUrl) {
         super(driver);
+
         if (openPageByUrl) {
-         openPageByUrl();
+            openPageByUrl();
         }
     }
 
