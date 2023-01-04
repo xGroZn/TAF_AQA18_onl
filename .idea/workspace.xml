@@ -5,16 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="86645caa-123d-47a3-a8b4-93ac586785ac" name="Changes" comment="initial">
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/project/AddProjectPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/LoginTest2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/factory/BrowserFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/factory/BrowserFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/services/WaitsService.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/baseEntities/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/baseEntities/BasePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/baseEntities/BaseStep.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/baseEntities/BaseStep.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/baseEntities/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/baseEntities/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/DashboardPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/DashboardPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/LoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/steps/UserStep.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/LoginTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/utils/Listener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/ActionsTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/AlertTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/FrameTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/JSTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/WaitsTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,6 +72,13 @@
       <recent name="D:\Programms\TAF_AQA18_onl\TAF_AQA18_onl\src\test\java\tests" />
       <recent name="D:\Programms\TAF_AQA18_onl\TAF_AQA18_onl\src\main\java" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Programms\TAF_AQA18_onl\TAF_AQA18_onl\src\test\java\utils" />
+      <recent name="D:\Programms\TAF_AQA18_onl\TAF_AQA18_onl\src\test\java\tests" />
+      <recent name="D:\Programms\TAF_AQA18_onl\TAF_AQA18_onl\src\test\java\steps" />
+      <recent name="D:\Programms\TAF_AQA18_onl\TAF_AQA18_onl\src\test\java\pages\project" />
+      <recent name="D:\Programms\TAF_AQA18_onl\TAF_AQA18_onl\src\test\java\pages" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
     </key>
@@ -76,8 +86,8 @@
       <recent name="tests" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.LoginTest.loginTest">
-    <configuration name="CssSelectorsTest.cssLocatorsTest" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.LoginTest.loginSuccessfulTest">
+    <configuration name="LoginTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="TAF_AQA18_onl" />
       <extension name="coverage">
         <pattern>
@@ -86,8 +96,25 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.CssSelectorsTest" />
-      <option name="METHOD_NAME" value="cssLocatorsTest" />
+      <option name="MAIN_CLASS_NAME" value="tests.LoginTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginTest.loginIncorrectTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="TAF_AQA18_onl" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.LoginTest" />
+      <option name="METHOD_NAME" value="loginIncorrectTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -95,10 +122,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="D:/Programms/TAF_AQA18_onl/TAF_AQA18_onl/src/test/resources/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="LoginTest.loginSuccessfulTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="TAF_AQA18_onl" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/testng.xml" />
-      <option name="TEST_OBJECT" value="SUITE" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.LoginTest" />
+      <option name="METHOD_NAME" value="loginSuccessfulTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -116,24 +151,6 @@
       <option name="PACKAGE_NAME" value="tests" />
       <option name="MAIN_CLASS_NAME" value="tests.LoginTest" />
       <option name="METHOD_NAME" value="loginTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SmokeTest.validateIKTCalculator" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="TAF_AQA18_onl" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.SmokeTest" />
-      <option name="METHOD_NAME" value="validateIKTCalculator" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -161,11 +178,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.LoginTest.loginSuccessfulTest" />
+        <item itemvalue="TestNG.LoginTest" />
         <item itemvalue="TestNG.LoginTest.loginTest" />
+        <item itemvalue="TestNG.LoginTest.loginIncorrectTest" />
         <item itemvalue="TestNG.SmokeTest.validateSKFTest" />
-        <item itemvalue="TestNG.SmokeTest.validateIKTCalculator" />
-        <item itemvalue="TestNG.D:/Programms/TAF_AQA18_onl/TAF_AQA18_onl/src/test/resources/testng.xml" />
-        <item itemvalue="TestNG.CssSelectorsTest.cssLocatorsTest" />
       </list>
     </recent_temporary>
   </component>
@@ -192,7 +209,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670881655275</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="initial">
+      <created>1671989051195</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1671989051196</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
