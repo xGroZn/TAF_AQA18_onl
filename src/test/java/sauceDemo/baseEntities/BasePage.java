@@ -1,4 +1,4 @@
-package baseEntities;
+package sauceDemo.baseEntities;
 
 import configuration.ReadProperties;
 import org.openqa.selenium.By;
@@ -14,10 +14,7 @@ public abstract class BasePage {
     protected abstract By getPageIdentifier();
 
     public boolean isPageOpened() {
-        return driver.findElement(getPageIdentifier()).isDisplayed();
+      return driver.findElement(getPageIdentifier()).isDisplayed();
     }
 
-    public void openPageByUrl(String pagePath) {
-        driver.get(ReadProperties.getUrl() + pagePath);
-    }
 }

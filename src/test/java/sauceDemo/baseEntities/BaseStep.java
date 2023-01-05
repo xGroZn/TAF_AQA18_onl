@@ -1,4 +1,4 @@
-package baseEntities;
+package sauceDemo.baseEntities;
 
 import org.openqa.selenium.WebDriver;
 
