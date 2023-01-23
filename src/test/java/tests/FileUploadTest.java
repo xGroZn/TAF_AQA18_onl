@@ -12,7 +12,7 @@ public class FileUploadTest extends BaseTest {
     public void fileUploadTest() {
         driver.get("https://the-internet.herokuapp.com/upload");
         WebElement fileChooseButton = waitsService.waitForExists(By.id("file-upload"));
-        String pathToFile = FileUploadTest.class.getClassLoader().getResource("witcher.jpg").getPath().substring(1);
+        String pathToFile = "D:\\Programms\\TAF_AQA18_onl\\TAF_AQA18_onl\\src\\test\\resources\\witcher.jpg";
         fileChooseButton.sendKeys(pathToFile);
         waitsService.waitForVisibilityBy(By.id("file-submit")).click();
         Assert.assertEquals(waitsService.waitForVisibilityBy(By.id("uploaded-files")).getText().trim(), "witcher.jpg");

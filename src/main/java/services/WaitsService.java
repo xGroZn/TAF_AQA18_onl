@@ -34,6 +34,9 @@ public class WaitsService {
     public boolean waitForElementInvisible(WebElement webElement) {
         return wait.until(ExpectedConditions.invisibilityOf(webElement));
     }
+    public boolean waitForElementInvisible(By by) {
+        return wait.until(ExpectedConditions.invisibilityOfElementLocated(by));
+    }
 
     public List<WebElement> waitForAllVisibleElementsLocatedBy(By locator) {
         return wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(locator));

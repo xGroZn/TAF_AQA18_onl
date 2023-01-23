@@ -13,6 +13,6 @@ public class FrameTest extends BaseTest {
         driver.findElement(By.xpath("//img")).isDisplayed();
         WebElement iFrame = driver.findElement(By.xpath("//iframe"));
         driver.switchTo().frame(iFrame);
-        driver.findElement(By.xpath("//p")).isDisplayed();
+        Assert.assertEquals(waitsService.waitForVisibilityBy(By.xpath("//p")).getText(), "Your content goes here.");
         }
 }

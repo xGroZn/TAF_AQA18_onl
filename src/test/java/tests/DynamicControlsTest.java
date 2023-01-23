@@ -21,13 +21,11 @@ public class DynamicControlsTest extends BaseTest {
         driver.get("https://the-internet.herokuapp.com/dynamic_controls");
         WaitsService waitsService = new WaitsService(driver, Duration.ofSeconds(10));
         driver.findElement(By.xpath("//button[@onclick='swapCheckbox()']")).click();
-        WebElement checkbox = driver.findElement(By.xpath("//input[@type='checkbox']"));
-        waitsService.waitForElementInvisible(checkbox);
+        waitsService.waitForElementInvisible(By.xpath("//input[@type='checkbox']"));
         WebElement input = driver.findElement(By.xpath("//input[@type='text']"));
         Assert.assertFalse(input.isEnabled());
-        if (!input.isEnabled()){
-                driver.findElement(By.xpath("//button[@onclick='swapInput()']")).click();
-        }
+        driver.findElement(By.xpath("//button[@onclick='swapInput()']")).click();
+
         Wait<WebDriver> wait = new FluentWait<WebDriver>(driver)
                 .withTimeout(Duration.ofSeconds(10))
                 .pollingEvery(Duration.ofMillis(50));
