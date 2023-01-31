@@ -4,7 +4,9 @@ import baseEntities.BaseTest;
 import configuration.ReadProperties;
 //import io.qameta.allure.*;
 import elements.Checkbox;
+import io.qameta.allure.*;
 import models.Project;
+import models.User;
 import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -27,12 +29,17 @@ public class LoginTest extends BaseTest {
     }
 
     @Test (description = "Description")
-//    @TmsLink("TC-001")
-//    @Description("Description1")
-//    @Link("https://onliner.by")
-//    @Link(name = "catalog", type = "mylink", url = "https://onliner.by")
-//    @Severity(SeverityLevel.BLOCKER)
+    @TmsLink("TC-001")
+    @Description("Description1")
+    @Link("https://onliner.by")
+    @Link(name = "catalog", type = "mylink", url = "https://onliner.by")
+    @Severity(SeverityLevel.BLOCKER)
     public void loginSuccessfulTest() {
+        User user = new User.Builder()
+                .withEmail(ReadProperties.username())
+                .withPassword(ReadProperties.password())
+                .build();
+
         Assert.assertTrue(
                 userStep.loginSuccessful(ReadProperties.username(), ReadProperties.password())
                 .isPageOpened()
