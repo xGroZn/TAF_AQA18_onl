@@ -9,7 +9,8 @@ public class NavigationSteps extends BaseStep {
         super(driver);
     }
 
-    public void navigateToAddProjectPage() {
+    public AddProjectPage navigateToAddProjectPage() {
         new AddProjectPage(driver).openPageByUrl();
+        return null;
     }
 }
