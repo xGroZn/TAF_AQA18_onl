@@ -4,6 +4,7 @@ import baseEntities.BaseTest;
 import configuration.ReadProperties;
 //import io.qameta.allure.*;
 import elements.Checkbox;
+import models.Project;
 import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -11,6 +12,7 @@ import pages.DashboardPage;
 import pages.LoginPage;
 import pages.project.AddProjectPage;
 import steps.NavigationSteps;
+import steps.ProjectSteps;
 
 public class LoginTest extends BaseTest {
 
@@ -48,11 +50,13 @@ public class LoginTest extends BaseTest {
 
     @Test
     public void addProjectTest() {
+        Project project = new Project();
+        project.setName("WP_01");
         userStep.loginSuccessful(ReadProperties.username(), ReadProperties.password());
-        projectSteps.addProject("WP_01");
+        projectSteps.addProject(project);
 
         Assert.assertEquals(driver.findElement(By.className("page_title")).getText(),
-                "WP_01");
+                project.getName());
     }
 
     @Test
