@@ -3,33 +3,28 @@ package sauceDemo.pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 import sauceDemo.baseEntities.BasePage;
 
 public class ProductsPage extends BasePage {
     private final static String pagePath = "inventory.html";
-    private final By titleProductsLocator = By.cssSelector(".title");
-    private final By addProductToCartButtonLocator = By.id("add-to-cart-sauce-labs-backpack");
-    private final By cartButtonLocator = By.cssSelector(".shopping_cart_link");
+
+    @FindBy (css = ".title")
+    public WebElement titleProducts;
+
+    @FindBy (id = "add-to-cart-sauce-labs-backpack")
+    public WebElement addProductToCartButton;
+
+    @FindBy (css = ".shopping_cart_link")
+    public WebElement cartButton;
 
     public ProductsPage(WebDriver driver) {
         super(driver);
     }
 
-    @Override
-    protected By getPageIdentifier() {
-        return titleProductsLocator;
+    public CartPage goToCartPage() {
+        cartButton.click();
+        return new CartPage(driver);
     }
 
-    @Override
-    public boolean isPageOpened() {
-        return driver.findElement(getPageIdentifier()).isDisplayed();
-    }
-
-    public WebElement getAddProductToCartButton() {
-        return driver.findElement(addProductToCartButtonLocator);
-    }
-
-    public WebElement getCartButton() {
-        return driver.findElement(cartButtonLocator);
-    }
 }

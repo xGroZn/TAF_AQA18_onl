@@ -2,6 +2,7 @@ package sauceDemo.steps;
 
 import org.openqa.selenium.WebDriver;
 import sauceDemo.baseEntities.BaseStep;
+import sauceDemo.models.User;
 import sauceDemo.pages.CartPage;
 import sauceDemo.pages.CheckoutInformationPage;
 import sauceDemo.pages.CheckoutOverviewPage;
@@ -22,35 +23,35 @@ public class ProductStep extends BaseStep {
     }
 
     public void addItemToCard() {
-        if (productsPage.isPageOpened()) {
-            productsPage.getAddProductToCartButton().click();
+        if (productsPage.titleProducts.isDisplayed()) {
+            productsPage.addProductToCartButton.click();
         }
     }
 
     public void openCart() {
-        if (productsPage.isPageOpened()) {
-            productsPage.getCartButton().click();
+        if (productsPage.titleProducts.isDisplayed()) {
+            productsPage.goToCartPage();
         }
     }
 
     public void checkout() {
-        if (cartPage.isPageOpened()) {
-            cartPage.getCheckoutButton().click();
+        if (cartPage.titleYourCart.isDisplayed()) {
+            cartPage.goToCheckoutInformationPage();
         }
     }
 
-    public void inputCheckoutInformation(String firstName, String lastName, String zipCode) {
-        if (checkoutInformationPage.isPageOpened()) {
-            checkoutInformationPage.getFirstNameInput().sendKeys(firstName);
-            checkoutInformationPage.getLastNameInput().sendKeys(lastName);
-            checkoutInformationPage.getZipInput().sendKeys(zipCode);
-            checkoutInformationPage.getContinueButton().click();
+    public void inputCheckoutInformation(User user) {
+        if (checkoutInformationPage.titleYourInformation.isDisplayed()) {
+            checkoutInformationPage.firstNameInput.sendKeys(user.getFirstName());
+            checkoutInformationPage.lastNameInput.sendKeys(user.getLastName());
+            checkoutInformationPage.zipInput.sendKeys(user.getZipCode());
+            checkoutInformationPage.goToCheckoutOverviewPage();
         }
     }
 
     public void checkoutFinish() {
-        if (checkoutOverviewPage.isPageOpened()) {
-            checkoutOverviewPage.getFinishButton().click();
+        if (checkoutOverviewPage.titleOverview.isDisplayed()) {
+            checkoutOverviewPage.goToCheckoutCompletePage();
         }
     }
 }
