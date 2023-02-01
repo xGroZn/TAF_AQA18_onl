@@ -2,16 +2,10 @@ package models;
 
 import lombok.*;
 
-@Setter
-@Getter
-@AllArgsConstructor
-@NoArgsConstructor
-@RequiredArgsConstructor
+@Builder
 @ToString
 @EqualsAndHashCode
-//@Data - заменяет Getter, Setter, ToString, EqualsAndHashCode,
-// но нужно добавить @NoArgsConstructor
-public class Milestone {
+public class MilestoneBuilder {
     @EqualsAndHashCode.Exclude
     private int id;
 

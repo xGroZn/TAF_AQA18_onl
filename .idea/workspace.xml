@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="86645caa-123d-47a3-a8b4-93ac586785ac" name="Changes" comment="Применить к фреймворку SauceDemo следующие паттерны:&#10;Page Factory&#10;Chain Of Invocations - на уровне страниц&#10;Value Object&#10;Builder">
-      <change afterPath="$PROJECT_DIR$/src/test/java/models/Milestone.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/MilestoneTest.java" afterDir="false" />
+    <list default="true" id="86645caa-123d-47a3-a8b4-93ac586785ac" name="Changes" comment="lombok">
+      <change afterPath="$PROJECT_DIR$/src/test/java/models/MilestoneBuilder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/models/Milestone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/models/Milestone.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/MilestoneTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/MilestoneTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,7 +26,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="pageObject_patterns_hw" />
+        <entry key="$PROJECT_DIR$" value="builder" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -87,20 +87,11 @@
       <recent name="" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="models" />
       <recent name="tests" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.MilestoneTest.lombokTest1">
-    <configuration name="D:/Programms/TAF_AQA18_onl/TAF_AQA18_onl/src/test/resources/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="TAF_AQA18_onl" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/testng.xml" />
-      <option name="TEST_OBJECT" value="SUITE" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="TestNG.MilestoneTest.lombokTest2">
     <configuration name="LoginTest.loginTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="TAF_AQA18_onl" />
       <extension name="coverage">
@@ -130,6 +121,24 @@
       <option name="PACKAGE_NAME" value="tests" />
       <option name="MAIN_CLASS_NAME" value="tests.MilestoneTest" />
       <option name="METHOD_NAME" value="lombokTest1" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MilestoneTest.lombokTest2" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="TAF_AQA18_onl" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.MilestoneTest" />
+      <option name="METHOD_NAME" value="lombokTest2" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -175,11 +184,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.MilestoneTest.lombokTest2" />
         <item itemvalue="TestNG.MilestoneTest.lombokTest1" />
         <item itemvalue="TestNG.SmokeTest.validateSKFTest" />
         <item itemvalue="TestNG.SmokeTest.validateIKTCalculator" />
         <item itemvalue="TestNG.LoginTest.loginTest" />
-        <item itemvalue="TestNG.D:/Programms/TAF_AQA18_onl/TAF_AQA18_onl/src/test/resources/testng.xml" />
       </list>
     </recent_temporary>
   </component>
@@ -234,7 +243,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673558934471</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="lombok">
+      <created>1675267273338</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1675267273338</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -250,6 +266,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial" />
+    <MESSAGE value="lombok" />
+    <option name="LAST_COMMIT_MESSAGE" value="lombok" />
   </component>
 </project>
