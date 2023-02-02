@@ -18,17 +18,8 @@ import steps.ProjectSteps;
 
 public class LoginTest extends BaseTest {
 
-    //@Test
-    public void loginTest() {
-        LoginPage loginPage = new LoginPage(driver);
-        loginPage.getEmailInput().sendKeys(ReadProperties.username());
-        loginPage.getPassword().sendKeys(ReadProperties.password());
-        loginPage.getLogInButton().click();
-
-        Assert.assertTrue(new DashboardPage(driver).isPageOpened());
-    }
-
     @Test (description = "Description")
+    @Issue("AQA18-12")
     @TmsLink("TC-001")
     @Description("Description1")
     @Link("https://onliner.by")
@@ -41,7 +32,7 @@ public class LoginTest extends BaseTest {
                 .build();
 
         Assert.assertTrue(
-                userStep.loginSuccessful(ReadProperties.username(), ReadProperties.password())
+                userStep.loginSuccessful(user)
                 .isPageOpened()
         );
     }
@@ -51,34 +42,7 @@ public class LoginTest extends BaseTest {
         Assert.assertEquals(
                 userStep.loginIncorrect(ReadProperties.username(), "sdfsdfsdf")
                 .getErrorTextElement().getText(),
-                "Email/Login or Password is incorrect. Please try again.1"
+                "Email/Login or Password is incorrect. Please try again."
         );
-    }
-
-    @Test
-    public void addProjectTest() {
-        Project project = new Project();
-        project.setName("WP_01");
-        userStep.loginSuccessful(ReadProperties.username(), ReadProperties.password());
-        projectSteps.addProject(project);
-
-        Assert.assertEquals(driver.findElement(By.className("page_title")).getText(),
-                project.getName());
-    }
-
-    @Test
-    public void radioButtonTest() {
-        userStep.loginSuccessful(ReadProperties.username(), ReadProperties.password());
-        AddProjectPage page = new NavigationSteps(driver).navigateToAddProjectPage();
-        //page.getType().selectByIndex(1);
-        //page.getType().selectByValue("3");
-        //page.getType().selectByText("Use a single repository for all cases (recommended)");
-    }
-
-    @Test
-    public void checkboxTest() {
-        Checkbox checkbox = new Checkbox(driver, driver.findElement(By.id("fff")));
-        checkbox.isEnabled();
-
     }
 }

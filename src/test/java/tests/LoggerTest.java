@@ -18,8 +18,8 @@ public class LoggerTest {
         logger.warn("Warning Message: ...");
         logger.error("Error Message: ...");
         logger.fatal("Fatal Message: ...");
-
-        loggerFile.error("Error Message: ...");
-        loggerFile.fatal("Fatal Message: ...");
     }
-}
+
+        //loggerFile.error("Error Message: ...");
+        //loggerFile.fatal("Fatal Message: ...");
+    }
