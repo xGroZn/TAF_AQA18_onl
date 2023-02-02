@@ -15,13 +15,13 @@ public class successfulTransactionTest extends BaseTest {
     public void loginTest() throws InterruptedException {
         UserStep userStep = new UserStep(driver);
         ProductStep productStep = new ProductStep(driver);
-        User user = new User.Builder()
-                .withLogin("standard_user")
-                .withPassword("secret_sauce")
-                .withFirstName("Andy")
-                .withLastName("Harrison")
-                .withZipCode("12322")
-                .build();
+        User user = new User();
+        user.setLogin("standard_user");
+        user.setPassword("secret_sauce");
+        user.setFirstName("Andy");
+        user.setLastName("Harrison");
+        user.setZipCode("12322");
+        //System.out.println(user.toString());
         CheckoutCompletePage checkoutCompletePage = new CheckoutCompletePage(driver);
         userStep.loginSuccessful(user);
         productStep.addItemToCard();
