@@ -4,14 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="86645caa-123d-47a3-a8b4-93ac586785ac" name="Changes" comment="дз lombok">
+    <list default="true" id="86645caa-123d-47a3-a8b4-93ac586785ac" name="Changes" comment="ci_cd">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/baseEntities/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/baseEntities/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/LoggerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/LoggerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/LoginTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/log4j2-test-colored.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/log4j2-test-simple.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/log4j2-test.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/log4j2-test.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,16 +43,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Programms/TAF_AQA18_onl/TAF_AQA18_onl/src/test/java/pages&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "D:/Programms/TAF_AQA18_onl/TAF_AQA18_onl/src/test/java/pages",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Programms\TAF_AQA18_onl\TAF_AQA18_onl\src\test\java\pages" />
@@ -67,10 +62,10 @@
       <recent name="D:\Programms\TAF_AQA18_onl\TAF_AQA18_onl\src\main\java" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Programms\TAF_AQA18_onl\TAF_AQA18_onl" />
       <recent name="D:\Programms\TAF_AQA18_onl\TAF_AQA18_onl\src\test\resources" />
       <recent name="D:\Programms\TAF_AQA18_onl\TAF_AQA18_onl\src\test\java\sauceDemo\tests" />
       <recent name="D:\Programms\TAF_AQA18_onl\TAF_AQA18_onl\src\test\java\sauceDemo\models" />
-      <recent name="D:\Programms\TAF_AQA18_onl\TAF_AQA18_onl" />
       <recent name="D:\Programms\TAF_AQA18_onl\TAF_AQA18_onl\src\test\java\utils" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -218,7 +213,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672853611640</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="ci_cd">
+      <created>1675340869228</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1675340869228</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -234,6 +236,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial" />
+    <MESSAGE value="ci_cd" />
+    <option name="LAST_COMMIT_MESSAGE" value="ci_cd" />
   </component>
 </project>
