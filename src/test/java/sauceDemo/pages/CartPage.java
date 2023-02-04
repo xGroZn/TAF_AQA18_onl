@@ -1,24 +1,17 @@
 package sauceDemo.pages;
 
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
-import sauceDemo.baseEntities.BasePage;
+import com.codeborne.selenide.SelenideElement;
+import org.openqa.selenium.By;
+import static com.codeborne.selenide.Selenide.$;
 
-public class CartPage extends BasePage {
+public class CartPage {
     private final static String pagePath = "cart.html";
-    @FindBy (css = ".title")
-    public WebElement titleYourCart;
 
-    @FindBy (id = "checkout")
-    public WebElement checkoutButton;
-
-    public CartPage(WebDriver driver) {
-        super(driver);
-    }
+    public SelenideElement titleYourCart = $(".title");
+    public SelenideElement checkoutButton = $(By.id("checkout"));
 
     public CheckoutInformationPage goToCheckoutInformationPage() {
         checkoutButton.click();
-        return new CheckoutInformationPage(driver);
+        return new CheckoutInformationPage();
     }
 }

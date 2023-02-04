@@ -1,35 +1,19 @@
 package sauceDemo.pages;
 
+import com.codeborne.selenide.SelenideElement;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
-import sauceDemo.baseEntities.BasePage;
+import static com.codeborne.selenide.Selenide.$;
 
-public class CheckoutInformationPage extends BasePage {
+public class CheckoutInformationPage {
     private final static String pagePath = "checkout-step-one.html";
-
-    @FindBy (css = ".title")
-    public WebElement titleYourInformation;
-
-    @FindBy (id = "first-name")
-    public WebElement firstNameInput;
-
-    @FindBy (id = "last-name")
-    public WebElement lastNameInput;
-
-    @FindBy (id = "postal-code")
-    public WebElement zipInput;
-
-    @FindBy (id = "continue")
-    public WebElement continueButton;
-
-    public CheckoutInformationPage(WebDriver driver) {
-        super(driver);
-    }
+    public SelenideElement titleYourInformation = $(".title");
+    public SelenideElement firstNameInput = $(By.id("first-name"));
+    public SelenideElement lastNameInput = $(By.id("last-name"));
+    public SelenideElement zipInput = $(By.id("postal-code"));
+    public SelenideElement continueButton = $(By.id("continue"));
 
     public CheckoutOverviewPage goToCheckoutOverviewPage() {
         continueButton.click();
-        return new CheckoutOverviewPage(driver);
+        return new CheckoutOverviewPage();
     }
 }
