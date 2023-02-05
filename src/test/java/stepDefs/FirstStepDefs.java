@@ -1,5 +1,7 @@
 package stepDefs;
 
+import baseEntities.BaseCucumberTest;
+import com.fasterxml.jackson.databind.ser.Serializers;
 import configuration.ReadProperties;
 import factory.BrowserFactory;
 import io.cucumber.java.After;
@@ -11,20 +13,24 @@ import pages.DashboardPage;
 import pages.LoginPage;
 import steps.UserStep;
 
-public class FirstStepDefs {
-    private WebDriver driver;
+public class FirstStepDefs extends BaseCucumberTest{
+    private BaseCucumberTest baseCucumberTest;
     private LoginPage loginPage;
     private DashboardPage dashboardPage;
+
+    public FirstStepDefs(BaseCucumberTest baseCucumberTest) {
+        this.baseCucumberTest = baseCucumberTest;
+    }
 
     @Given("открыт браузер")
     public void startBrowser() {
         driver = new BrowserFactory().getDriver();
     }
 
-    @After
-    public void tearDown() {
-        driver.quit();
-    }
+//    @After
+//    public void tearDown() {
+//        driver.quit();
+//    }
 
     @When("страница логина открыта")
     @Given("дубликат шага")
@@ -62,5 +68,4 @@ public class FirstStepDefs {
     public void projectIdIs(int value) {
         Assert.assertEquals(value, 123);
     }
-
 }
