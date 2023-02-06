@@ -1,25 +1,23 @@
 package sauceDemo.pages;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import sauceDemo.baseEntities.BasePage;
+import sauceDemo.baseEntities.BaseCucumberTest;
 
-public class CheckoutOverviewPage extends BasePage {
+public class CheckoutOverviewPage extends BaseCucumberTest {
+    private BaseCucumberTest baseCucumberTest;
     private final static String pagePath = "checkout-step-two.html";
     private final By titleOverviewLocator = By.cssSelector(".title");
     private final By finishButtonLocator = By.id("finish");
 
-    public CheckoutOverviewPage(WebDriver driver) {
-        super(driver);
+    public CheckoutOverviewPage(BaseCucumberTest baseCucumberTest) {
+        this.baseCucumberTest = baseCucumberTest;
     }
 
-    @Override
     protected By getPageIdentifier() {
         return titleOverviewLocator;
     }
 
-    @Override
     public boolean isPageOpened() {
         return driver.findElement(getPageIdentifier()).isDisplayed();
     }

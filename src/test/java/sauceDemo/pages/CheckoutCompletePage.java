@@ -1,26 +1,27 @@
 package sauceDemo.pages;
 
+import io.cucumber.java.en.Then;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import sauceDemo.baseEntities.BasePage;
+import sauceDemo.baseEntities.BaseCucumberTest;
 
-public class CheckoutCompletePage extends BasePage {
+public class CheckoutCompletePage extends BaseCucumberTest {
+    private BaseCucumberTest baseCucumberTest;
 
     private final static String pagePath = "checkout-complete.html";
     private final By titleCompleteLocator = By.cssSelector(".title");
     private final By backHomeButtonLocator = By.id("back-to-products");
 
-    public CheckoutCompletePage(WebDriver driver) {
-        super(driver);
+    public CheckoutCompletePage(BaseCucumberTest baseCucumberTest) {
+        this.baseCucumberTest = baseCucumberTest;
     }
 
-    @Override
     protected By getPageIdentifier() {
         return titleCompleteLocator;
     }
 
-    @Override
+    //@Override
+    @Then("открыта страница успешной покупки")
     public boolean isPageOpened() {
         return driver.findElement(getPageIdentifier()).isDisplayed();
     }

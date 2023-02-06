@@ -1,25 +1,23 @@
 package sauceDemo.pages;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import sauceDemo.baseEntities.BasePage;
+import sauceDemo.baseEntities.BaseCucumberTest;
 
-public class LoginPage extends BasePage {
+public class LoginPage extends BaseCucumberTest {
+    private BaseCucumberTest baseCucumberTest;
     private final By loginInputLocator = By.id("user-name");
     private final By passwordInputLocator = By.id("password");
     private final By loginButtonLocator = By.id("login-button");
 
-    public LoginPage(WebDriver driver) {
-        super(driver);
+    public LoginPage(BaseCucumberTest baseCucumberTest) {
+        this.baseCucumberTest = baseCucumberTest;
     }
 
-    @Override
     protected By getPageIdentifier() {
         return loginButtonLocator;
     }
 
-    @Override
     public boolean isPageOpened() {
         return driver.findElement(getPageIdentifier()).isDisplayed();
     }

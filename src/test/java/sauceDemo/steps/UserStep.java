@@ -1,19 +1,20 @@
 package sauceDemo.steps;
 
-import org.openqa.selenium.WebDriver;
-import sauceDemo.baseEntities.BaseStep;
-import sauceDemo.pages.CheckoutInformationPage;
+import io.cucumber.java.en.Given;
+import sauceDemo.baseEntities.BaseCucumberTest;
 import sauceDemo.pages.LoginPage;
 
-public class UserStep extends BaseStep {
+public class UserStep extends BaseCucumberTest {
 
+    private BaseCucumberTest baseCucumberTest;
     private LoginPage loginPage;
 
-    public UserStep(WebDriver driver) {
-        super(driver);
-        loginPage = new LoginPage(driver);
+    public UserStep(BaseCucumberTest baseCucumberTest, LoginPage loginPage) {
+        this.baseCucumberTest = baseCucumberTest;
+        this.loginPage = loginPage;
     }
 
+    @Given("пользователь {string} с паролем {string} вошел в систему")
     public void loginSuccessful(String login, String password) {
         if (loginPage.isPageOpened()) {
             loginPage.getLoginInput().sendKeys(login);
