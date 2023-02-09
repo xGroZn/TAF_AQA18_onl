@@ -4,21 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="86645caa-123d-47a3-a8b4-93ac586785ac" name="Changes" comment="дз по cucumber">
-      <change afterPath="$PROJECT_DIR$/src/test/java/baseEntities/BaseApiTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/api/HttpClientTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/api/ReqresApiTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/api/TestRailApiTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/api/TestRailApiTest1.java" afterDir="false" />
+    <list default="true" id="86645caa-123d-47a3-a8b4-93ac586785ac" name="Changes" comment="restApi">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/models/Project.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/models/Project.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/LoggerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/gui/LoggerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/gui/LoginTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/MilestoneTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/gui/MilestoneTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/SingletonTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/gui/SingletonTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/config.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/download.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/api/TestRailApiTest1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/api/TestRailApiTest1.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,25 +76,7 @@
       <recent name="tests" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.TestRailApiTest1.addProject3">
-    <configuration name="TestRailApiTest1.addProject1" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="TAF_AQA18_onl" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.api.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests.api" />
-      <option name="MAIN_CLASS_NAME" value="tests.api.TestRailApiTest1" />
-      <option name="METHOD_NAME" value="addProject1" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="TestNG.TestRailApiTest1.readProject">
     <configuration name="TestRailApiTest1.addProject2" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="TAF_AQA18_onl" />
       <extension name="coverage">
@@ -142,7 +113,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestRailApiTest.getAllUsers" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="TestRailApiTest1.addProject4" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="TAF_AQA18_onl" />
       <extension name="coverage">
         <pattern>
@@ -151,8 +122,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="tests.api" />
-      <option name="MAIN_CLASS_NAME" value="tests.api.TestRailApiTest" />
-      <option name="METHOD_NAME" value="getAllUsers" />
+      <option name="MAIN_CLASS_NAME" value="tests.api.TestRailApiTest1" />
+      <option name="METHOD_NAME" value="addProject4" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -160,7 +131,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestRailApiTest.getAllUsers1" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="TestRailApiTest1.addProject5" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="TAF_AQA18_onl" />
       <extension name="coverage">
         <pattern>
@@ -169,8 +140,26 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="tests.api" />
-      <option name="MAIN_CLASS_NAME" value="tests.api.TestRailApiTest" />
-      <option name="METHOD_NAME" value="getAllUsers1" />
+      <option name="MAIN_CLASS_NAME" value="tests.api.TestRailApiTest1" />
+      <option name="METHOD_NAME" value="addProject5" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestRailApiTest1.readProject" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="TAF_AQA18_onl" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.api.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests.api" />
+      <option name="MAIN_CLASS_NAME" value="tests.api.TestRailApiTest1" />
+      <option name="METHOD_NAME" value="readProject" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -180,11 +169,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.TestRailApiTest1.readProject" />
+        <item itemvalue="TestNG.TestRailApiTest1.addProject5" />
+        <item itemvalue="TestNG.TestRailApiTest1.addProject4" />
         <item itemvalue="TestNG.TestRailApiTest1.addProject3" />
         <item itemvalue="TestNG.TestRailApiTest1.addProject2" />
-        <item itemvalue="TestNG.TestRailApiTest1.addProject1" />
-        <item itemvalue="TestNG.TestRailApiTest.getAllUsers1" />
-        <item itemvalue="TestNG.TestRailApiTest.getAllUsers" />
       </list>
     </recent_temporary>
   </component>
@@ -225,7 +214,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672853611640</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="restApi">
+      <created>1675796525866</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1675796525866</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -241,6 +237,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial" />
+    <MESSAGE value="restApi" />
+    <option name="LAST_COMMIT_MESSAGE" value="restApi" />
   </component>
 </project>
