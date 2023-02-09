@@ -15,12 +15,12 @@ import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.*;
 
 public class TestRailApiTest1 extends BaseApiTest {
-
     int projectID;
+    Project expectedProject;
 
     @Test
     public void addProject1() {
-        String endpoint = "/index.php?/api/v2/add_project";
+        String endpoint = "index.php?/api/v2/add_project";
 
         Project expectedProject = new Project();
         expectedProject.setName("WP_Project_01");
@@ -44,12 +44,12 @@ public class TestRailApiTest1 extends BaseApiTest {
                 .post(endpoint)
                 .then()
                 .log().body()
-                .statusCode((HttpStatus.SC_OK));
+                .statusCode(HttpStatus.SC_OK);
     }
 
     @Test
     public void addProject2() {
-        String endpoint = "/index.php?/api/v2/add_project";
+        String endpoint = "index.php?/api/v2/add_project";
 
         Project expectedProject = new Project();
         expectedProject.setName("WP_Project_01");
@@ -67,12 +67,12 @@ public class TestRailApiTest1 extends BaseApiTest {
                 .post(endpoint)
                 .then()
                 .log().body()
-                .statusCode((HttpStatus.SC_OK));
+                .statusCode(HttpStatus.SC_OK);
     }
 
     @Test
     public void addProject3() {
-        String endpoint = "/index.php?/api/v2/add_project";
+        String endpoint = "index.php?/api/v2/add_project";
 
         Project expectedProject = new Project();
         expectedProject.setName("WP_Project_03");
@@ -87,12 +87,13 @@ public class TestRailApiTest1 extends BaseApiTest {
                 .post(endpoint)
                 .then()
                 .log().body()
-                .statusCode((HttpStatus.SC_OK));
+                .statusCode(HttpStatus.SC_OK);
     }
+
 
     @Test
     public void addProject4() {
-        String endpoint = "/index.php?/api/v2/add_project";
+        String endpoint = "index.php?/api/v2/add_project";
 
         Project expectedProject = new Project();
         expectedProject.setName("WP_Project_04");
@@ -106,7 +107,7 @@ public class TestRailApiTest1 extends BaseApiTest {
                 .post(endpoint)
                 .then()
                 .log().body()
-                .statusCode((HttpStatus.SC_OK))
+                .statusCode(HttpStatus.SC_OK)
                 .extract()
                 .jsonPath()
                 .getInt("id");
@@ -116,9 +117,9 @@ public class TestRailApiTest1 extends BaseApiTest {
 
     @Test
     public void addProject5() {
-        String endpoint = "/index.php?/api/v2/add_project";
+        String endpoint = "index.php?/api/v2/add_project";
 
-        Project expectedProject = new Project();
+        expectedProject = new Project();
         expectedProject.setName("WP_Project_05");
         expectedProject.setAnnouncement("This is a description!!!");
         expectedProject.setType(1);
@@ -129,8 +130,8 @@ public class TestRailApiTest1 extends BaseApiTest {
                 .when()
                 .post(endpoint)
                 .then()
-                .log().all()
-                .statusCode((HttpStatus.SC_OK))
+                .log().body()
+                .statusCode(HttpStatus.SC_OK)
                 .extract()
                 .response();
 
@@ -144,17 +145,17 @@ public class TestRailApiTest1 extends BaseApiTest {
     public void readProject() {
         String endpoint = "index.php?/api/v2/get_project/{project_id}";
 
-        Response response = given()
+        Response response =  given()
                 .pathParams("project_id", projectID)
                 .log().all()
-                .when()
+        .when()
                 .get(endpoint)
-                .then()
+        .then()
                 .log().body()
                 .statusCode(HttpStatus.SC_OK)
                 .body("id", equalTo(projectID))
-                //.body("name", is(expectedProject.getName())) //застрял в 20.00, этот тест не проходит, что-то с expectedProject
+                .body("name", is(expectedProject.getName()))
                 .extract().response();
+        // отстал в 20.00
     }
-
 }
