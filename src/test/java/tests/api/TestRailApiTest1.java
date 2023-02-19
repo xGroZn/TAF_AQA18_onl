@@ -153,9 +153,9 @@ public class TestRailApiTest1 extends BaseApiTest {
         .then()
                 .log().body()
                 .statusCode(HttpStatus.SC_OK)
+                //матчерсы
                 .body("id", equalTo(projectID))
                 .body("name", is(expectedProject.getName()))
                 .extract().response();
-        // отстал в 20.00
     }
 }

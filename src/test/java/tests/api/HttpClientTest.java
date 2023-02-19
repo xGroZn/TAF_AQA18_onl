@@ -17,7 +17,7 @@ public class HttpClientTest {
     public void simpleApiTest() throws IOException {
         String restUrl = "https://reqres.in/";
 
-        //Create on Object and pass url
+        //Create an Object and pass url
         HttpUriRequest request = new HttpGet(restUrl);
 
         // Send the request
