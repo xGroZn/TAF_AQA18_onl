@@ -1,5 +1,6 @@
 package models;
 
+import adapters.MilestoneAdapter;
 import com.google.gson.annotations.SerializedName;
 
 import java.util.Objects;
@@ -77,4 +78,5 @@ public class Project {
     public int hashCode() {
         return Objects.hash(getName(), getAnnouncement(), getType(), isShowAnnouncement());
     }
+
 }

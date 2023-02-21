@@ -1,25 +1,34 @@
 package models;
 
+import com.google.gson.annotations.Expose;
+import com.google.gson.annotations.SerializedName;
 import lombok.*;
 
 @Setter
 @Getter
 @AllArgsConstructor
 @NoArgsConstructor
-@RequiredArgsConstructor
 @ToString
 @EqualsAndHashCode
-//@Data - заменяет Getter, Setter, ToString, EqualsAndHashCode,
-// но нужно добавить @NoArgsConstructor
+
 public class Milestone {
-    @EqualsAndHashCode.Exclude
+
     private int id;
 
-    @NonNull
+    @Expose
     private String name;
+
+    @SerializedName(value = "refs")
     private String references;
+
+    @Expose
     private String description;
-    @ToString.Exclude
+
+    @SerializedName(value = "is_completed")
     private boolean completed;
+
+    @Expose
+    @SerializedName(value = "is_started")
+    private boolean started;
 
 }
