@@ -4,17 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="86645caa-123d-47a3-a8b4-93ac586785ac" name="Changes" comment="Исправления">
-      <change afterPath="$PROJECT_DIR$/src/test/java/elements/Checkbox.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/utils/InvokedListener.java" afterDir="false" />
+    <list default="true" id="86645caa-123d-47a3-a8b4-93ac586785ac" name="Changes" comment="дз RestApi">
+      <change afterPath="$PROJECT_DIR$/src/test/java/elements/DropDownMenu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/steps/NavigationSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/NavigationSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/ActionsTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/AlertTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/FrameTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/JSTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/baseEntities/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/baseEntities/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/elements/Checkbox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/elements/Checkbox.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/elements/RadioButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/elements/RadioButton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/project/AddProjectPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/project/AddProjectPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/steps/ProjectSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/ProjectSteps.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/LoginTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/WaitsTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/utils/InvokedListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utils/InvokedListener.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/config.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -26,25 +25,16 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
-        <option value="AnnotationType" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="advancedActions" />
+        <entry key="$PROJECT_DIR$" value="wrappers" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="GithubPullRequestsUISettings">
-    <option name="recentNewPullRequestHead">
-      <RepoCoordinatesHolder>
-        <option name="owner" value="xGroZn" />
-        <option name="repository" value="TAF_AQA18_onl" />
-      </RepoCoordinatesHolder>
-    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -69,14 +59,10 @@
     &quot;last_opened_file_path&quot;: &quot;D:/Programms/TAF_AQA18_onl/TAF_AQA18_onl/src/test/java/pages&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   }
 }</component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="tests" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Programms\TAF_AQA18_onl\TAF_AQA18_onl\src\test\java\pages" />
       <recent name="D:\Programms\TAF_AQA18_onl\TAF_AQA18_onl\src\test\resources" />
@@ -84,11 +70,11 @@
       <recent name="D:\Programms\TAF_AQA18_onl\TAF_AQA18_onl\src\main\java" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Programms\TAF_AQA18_onl\TAF_AQA18_onl\src\test\java\pages\project" />
       <recent name="D:\Programms\TAF_AQA18_onl\TAF_AQA18_onl\src\test\java\utils" />
-      <recent name="D:\Programms\TAF_AQA18_onl\TAF_AQA18_onl\src\test\java\tests" />
-      <recent name="D:\Programms\TAF_AQA18_onl\TAF_AQA18_onl\src\test\java" />
-      <recent name="D:\Programms\TAF_AQA18_onl\TAF_AQA18_onl\src\test\resources" />
-      <recent name="D:\Programms\TAF_AQA18_onl\TAF_AQA18_onl" />
+      <recent name="D:\Programms\TAF_AQA18_onl\TAF_AQA18_onl\src\test\java\adapters" />
+      <recent name="D:\Programms\TAF_AQA18_onl\TAF_AQA18_onl\src\test\java\tests\api" />
+      <recent name="D:\Programms\TAF_AQA18_onl\TAF_AQA18_onl\src\test\java\baseEntities" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
@@ -97,36 +83,8 @@
       <recent name="tests" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.ActionsTest.fileUploadTest">
-    <configuration name="ActionsTest.fileUploadTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="TAF_AQA18_onl" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.ActionsTest" />
-      <option name="METHOD_NAME" value="fileUploadTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="D:/Programms/TAF_AQA18_onl/TAF_AQA18_onl/src/test/resources/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="TAF_AQA18_onl" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/testng.xml" />
-      <option name="TEST_OBJECT" value="SUITE" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LoginTest.loginTest" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.LoginTest.radioButtonTest">
+    <configuration name="LoginTest.DropDownTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="TAF_AQA18_onl" />
       <extension name="coverage">
         <pattern>
@@ -136,7 +94,43 @@
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
       <option name="MAIN_CLASS_NAME" value="tests.LoginTest" />
-      <option name="METHOD_NAME" value="loginTest" />
+      <option name="METHOD_NAME" value="DropDownTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginTest.checkboxTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="TAF_AQA18_onl" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.LoginTest" />
+      <option name="METHOD_NAME" value="checkboxTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginTest.radioButtonTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="TAF_AQA18_onl" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.LoginTest" />
+      <option name="METHOD_NAME" value="radioButtonTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -182,11 +176,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.LoginTest.radioButtonTest" />
+        <item itemvalue="TestNG.LoginTest.DropDownTest" />
+        <item itemvalue="TestNG.LoginTest.checkboxTest" />
         <item itemvalue="TestNG.SmokeTest.validateSKFTest" />
         <item itemvalue="TestNG.SmokeTest.validateIKTCalculator" />
-        <item itemvalue="TestNG.LoginTest.loginTest" />
-        <item itemvalue="TestNG.D:/Programms/TAF_AQA18_onl/TAF_AQA18_onl/src/test/resources/testng.xml" />
-        <item itemvalue="TestNG.ActionsTest.fileUploadTest" />
       </list>
     </recent_temporary>
   </component>
@@ -227,19 +221,19 @@
       <option name="project" value="LOCAL" />
       <updated>1672853611640</updated>
     </task>
-    <task id="LOCAL-00005" summary="initial">
-      <created>1673300056039</created>
+    <task id="LOCAL-00005" summary="restApi">
+      <created>1675796525866</created>
       <option name="number" value="00005" />
       <option name="presentableId" value="LOCAL-00005" />
       <option name="project" value="LOCAL" />
-      <updated>1673300056039</updated>
+      <updated>1675796525866</updated>
     </task>
-    <task id="LOCAL-00006" summary="initial">
-      <created>1673558934470</created>
+    <task id="LOCAL-00006" summary="restApi">
+      <created>1675962453656</created>
       <option name="number" value="00006" />
       <option name="presentableId" value="LOCAL-00006" />
       <option name="project" value="LOCAL" />
-      <updated>1673558934471</updated>
+      <updated>1675962453656</updated>
     </task>
     <option name="localTasksCounter" value="7" />
     <servers />
@@ -257,6 +251,17 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial" />
+    <MESSAGE value="restApi" />
+    <option name="LAST_COMMIT_MESSAGE" value="restApi" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="5" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

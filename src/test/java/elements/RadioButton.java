@@ -1,48 +1,52 @@
 package elements;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class RadioButton {
+    private WebDriver driver;
     private List<UIElement> uiElementList;
     private List<String> valueList;
     private List<String> textList;
 
-    // Продумать механизм поиска этого элемента
-    // поиск по name
-    public RadioButton(WebDriver driver, String attributeNameValue) {
+    public RadioButton(WebDriver driver, String xpathValue) {
         uiElementList = new ArrayList<>();
         valueList = new ArrayList<>();
         textList = new ArrayList<>();
 
-        for (WebElement webElement : driver.findElements(By.name(attributeNameValue))) {
+        for (WebElement webElement : driver.findElements(By.xpath(xpathValue))) {
             UIElement element = new UIElement(driver, webElement);
             uiElementList.add(element);
             valueList.add(element.getAttribute("value"));
             textList.add(element.findUIElement(By.xpath("parent::*/strong")).getText().trim());
         }
     }
-
-    // Добавить методы для работы с ним
-    // selectByValue
-    // selectByText
-    // selectByIndex
     public void selectByIndex(int index) {
-        uiElementList.get(index).click();
+        try {
+            uiElementList.get(index).click();
+        } catch (ElementNotInteractableException ex) {
+            ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", uiElementList);
+            uiElementList.get(index).click();
+        }
     }
 
     public void selectByValue(String value) {
-        uiElementList.get(valueList.indexOf(value)).click();
+        try {
+            uiElementList.get(valueList.indexOf(value)).click();
+        } catch (ElementNotInteractableException ex) {
+            ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", uiElementList);
+            uiElementList.get(valueList.indexOf(value)).click();
+        }
     }
 
     public void selectByText(String text) {
-        uiElementList.get(textList.indexOf(text)).click();
+        try {
+            uiElementList.get(textList.indexOf(text)).click();
+        } catch (ElementNotInteractableException ex) {
+            ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", uiElementList);
+            uiElementList.get(textList.indexOf(text)).click();
+        }
     }
-
-
-    // Проверит что поиск и методы работают на всех похожих элемнетах сайта
 }

@@ -26,6 +26,16 @@ public class Checkbox {
     }
 
     public boolean isEnabled() {
+
         return uiElement.isEnabled();
+    }
+
+    public boolean isSelected() {
+
+        return uiElement.isSelected();
+    }
+    public boolean isDisplayed() {
+
+        return uiElement.isDisplayed();
     }
 }
