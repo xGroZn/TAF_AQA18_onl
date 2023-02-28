@@ -3,15 +3,14 @@ package tests.api;
 import adapters.MilestoneAdapter;
 import adapters.ProjectAdapter;
 import baseEntities.BaseApiGsonTest;
-import io.restassured.mapper.ObjectMapperType;
-import io.restassured.response.Response;
 import models.Milestone;
 import models.Project;
-import org.apache.http.HttpStatus;
 import org.testng.annotations.Test;
-import utils.Endpoints;
+import services.DataBaseService;
 
-import static io.restassured.RestAssured.given;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.equalTo;
 
@@ -22,19 +21,32 @@ public class TestRailMilestoneTest extends BaseApiGsonTest {
     Milestone expectedMilestone;
     int projectID;
     int milestoneID;
+    DataBaseService dbService;
+
 
     @Test
-    public void addMilestone() {
+    public void addMilestone() throws SQLException {
+        dbService = new DataBaseService();
+
+        String sqlProject = "SELECT * FROM public.projects;";
+        String sqlMilestone = "SELECT * FROM public.milestones;";
+
+        ResultSet rsProject = dbService.executeQuery(sqlProject);
+        ResultSet rsMilestone = dbService.executeQuery(sqlMilestone);
 
         expectedProject = new Project();
-        expectedProject.setName("Project_by_Budnik");
-        expectedProject.setAnnouncement("New project by Budnik");
-        expectedProject.setType(1);
-        expectedProject.setShowAnnouncement(true);
+        rsProject.next();
+        expectedProject.setName(rsProject.getString("name"));
+        rsProject.next();
+        expectedProject.setAnnouncement(rsProject.getString("announcement"));
+        expectedProject.setType(rsProject.getInt(4));
+        expectedProject.setShowAnnouncement(rsProject.getBoolean(5));
 
         expectedMilestone = new Milestone();
-        expectedMilestone.setName("Milestone_by_Budnik");
-        expectedMilestone.setDescription("Just description");
+        rsMilestone.next();
+        expectedMilestone.setName(rsMilestone.getString("name"));
+        rsMilestone.next();
+        expectedMilestone.setDescription(rsMilestone.getString("description"));
 
         projectID = projectAdapter.add(expectedProject).getBody().jsonPath().getInt("id");
         milestoneID = milestoneAdapter.add(expectedMilestone, projectID).getBody().jsonPath().getInt("id");

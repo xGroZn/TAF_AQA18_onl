@@ -1,19 +1,15 @@
 package models;
 
+import com.google.gson.annotations.SerializedName;
 import lombok.*;
 
 @Builder
-@ToString
-@EqualsAndHashCode
+@Data
 public class MilestoneBuilder {
-    @EqualsAndHashCode.Exclude
-    private int id;
 
-    @NonNull
+    private int id;
     private String name;
     private String references;
     private String description;
-    @ToString.Exclude
     private boolean completed;
-
 }

@@ -1,5 +1,6 @@
 package adapters;
 
+import dbTables.MilestonesTable;
 import io.restassured.mapper.ObjectMapperType;
 import io.restassured.response.Response;
 import models.Milestone;
@@ -7,10 +8,13 @@ import models.Project;
 import org.apache.http.HttpStatus;
 import utils.Endpoints;
 
+import java.sql.ResultSet;
+
 import static org.hamcrest.Matchers.*;
 import static io.restassured.RestAssured.given;
 
 public class MilestoneAdapter extends BaseAdapter{
+    MilestonesTable milestonesTable;
 
     public Response add(Milestone milestone, int projectID) {
         Response response = given()
@@ -24,6 +28,7 @@ public class MilestoneAdapter extends BaseAdapter{
                 .extract().response();
         return response;
     }
+
 
     public Response get(int milestoneID) {
         Response response = given()
